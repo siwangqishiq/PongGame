@@ -1,15 +1,22 @@
 package com.xinlan.pong;
 
+import com.xinlan.pong.view.MainView;
+
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.app.Activity;
 
 public class MainActivity extends Activity {
 	/**
-	 * µ⁄“ª¥Œ
+	 *PongÂ∞èÊ∏∏Êàè
 	 */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    	super.onCreate(savedInstanceState);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+				WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(new MainView(this));
     }
 }
