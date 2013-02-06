@@ -1,17 +1,12 @@
 package com.xinlan.pong;
 
-import com.example.pong.R;
-
 import android.os.Bundle;
 import android.app.Activity;
 
-/**
- * 第一次提交
- * @author Panyi
- *
- */
 public class MainActivity extends Activity {
-
+	/**
+	 * 第一次
+	 */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
